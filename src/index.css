@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 
-.fuente_home {
+body{
     font-family: "Inter", serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
 }

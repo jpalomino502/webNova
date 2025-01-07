@@ -1,4 +1,4 @@
-import Logo from "../../assets/services.webp";
+import Logo from "../../assets/home/services/services.webp";
 
 export default function Services() {
     return (
@@ -16,7 +16,7 @@ export default function Services() {
           <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
             {/* Left Column - Text Content */}
             <div className="w-full lg:w-1/2 px-4">
-              <h1 className="text-5xl font-bold mb-8">Servicios de WebNova</h1>
+              <h1 className="text-5xl mb-8">Servicios de WebNova</h1>
               <div className="space-y-6">
                 <p className="text-black">
                   En <strong>WebNova</strong>, nos especializamos en ofrecer soluciones digitales innovadoras. Desde el diseño de sitios web modernos hasta estrategias avanzadas de marketing digital, estamos aquí para ayudarte a destacar en línea.

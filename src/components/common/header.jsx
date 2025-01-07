@@ -9,9 +9,9 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY && currentScrollY > 50 && !isMenuOpen) {
-        setIsVisible(false);
-      } else {
+      if (currentScrollY > lastScrollY && currentScrollY > 150 && !isMenuOpen) {
+        setIsVisible(false); 
+      } else if (currentScrollY < lastScrollY || currentScrollY <= 150) {
         setIsVisible(true);
       }
 
@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header
-      className={`px-5 fixed top-4 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
+      className={`px-5 fixed top-4 left-0 right-0 z-50 transition-all duration-1000 ease-in-out ${
         isVisible ? 'transform translate-y-0' : 'transform -translate-y-[200%]'
       }`}
     >

@@ -55,11 +55,10 @@ export default function Header() {
       <nav className="max-w-xl mx-auto flex items-center justify-between h-12 px-4 rounded-3xl shadow-sm backdrop-blur-lg backdrop-saturate-150 bg-black/[.65]">
         <a href="/">
           <img src={Logo} alt="Logo" className="h-8 invert" />
-          <span className="block md:hidden ml-2 text-white text-xl">
+        </a>
+        <span className="block md:hidden ml-2 text-white text-xl">
             WebNova
           </span>
-        </a>
-
         <div className="hidden md:flex items-center space-x-8">
           <a
             href="/servicios"

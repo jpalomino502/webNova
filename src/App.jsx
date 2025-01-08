@@ -4,7 +4,7 @@ import Home from './pages/home';
 
 export default function App() {
   return (
-    <div className='bg-black'>
+    <div>
       <Header />
       <Home/>
       <Footer />

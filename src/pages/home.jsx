@@ -1,7 +1,9 @@
 import Hero from "../components/home/hero";
 import Services from "../components/home/services";
 import Projets from "../components/home/projets";
-import aboutUs from "../components/home/aboutUs.jsx";
+import AboutUs from "../components/home/aboutUs";
+import Team from "../components/home/team";
+import Faqs from "../components/home/faqs";
 
 export default function Home() {
     return (
@@ -9,6 +11,9 @@ export default function Home() {
         <Hero />
         <Services />
         <Projets />
+        <AboutUs />
+        <Team />
+        <Faqs />
         </div>
     );
 }

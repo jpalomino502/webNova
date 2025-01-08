@@ -1,8 +1,6 @@
-import {  motion } from "framer-motion";
-import geometry from "../../assets/home/hero/geometry.webp";
+import { motion } from "framer-motion";
 import texture from "../../assets/home/hero/texture.webp";
 import { useEffect, useState } from "react";
-import '../../index.css'
 
 export default function Hero() {
     const words = ["CREATIVOS", "INNOVADORES", "DINÁMICOS", "ÚNICOS"];
@@ -37,20 +35,13 @@ export default function Hero() {
 
     return (
         <main className="relative h-screen overflow-hidden bg-black fuente_home">
-            {/* <img
+           <img
                 src={texture}
                 alt="Background texture"
                 style={{ objectFit: "cover" }}
                 quality={100}
                 className="absolute inset-0 z-0 opacity-80"
-            /> */}
-            {/* <img
-                src={geometry}
-                alt="Wavy pattern"
-                style={{ objectFit: "cover" }}
-                quality={100}
-                className="absolute inset-0 z-10 opacity-40 md:translate-x-1/4 lg:translate-x-1/3"
-            /> */}
+            /> 
             <div className="relative z-20 h-full flex items-center justify-center">
                 <div className="text-center flex flex-col justify-center h-full mt-20 sm:mt-32 md:mt-0">
                     <motion.h1
@@ -85,4 +76,3 @@ export default function Hero() {
         </main>
     )
 }
-

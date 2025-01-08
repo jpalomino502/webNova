@@ -37,24 +37,24 @@ export default function Hero() {
 
     return (
         <main className="relative h-screen overflow-hidden bg-black fuente_home">
-            <img
+            {/* <img
                 src={texture}
                 alt="Background texture"
                 style={{ objectFit: "cover" }}
                 quality={100}
                 className="absolute inset-0 z-0 opacity-80"
-            />
-            <img
+            /> */}
+            {/* <img
                 src={geometry}
                 alt="Wavy pattern"
                 style={{ objectFit: "cover" }}
                 quality={100}
                 className="absolute inset-0 z-10 opacity-40 md:translate-x-1/4 lg:translate-x-1/3"
-            />
+            /> */}
             <div className="relative z-20 h-full flex items-center justify-center">
                 <div className="text-center flex flex-col justify-center h-full mt-20 sm:mt-32 md:mt-0">
                     <motion.h1
-                        className="text-5xl sm:text-8xl lg:text-9xl font text-white tracking-tighter"
+                        className="text-5xl sm:text-8xl lg:text-9xl text-white tracking-tighter"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -73,7 +73,7 @@ export default function Hero() {
                         </span>
                     </motion.h1>
                     <motion.h2
-                        className="text-5xl sm:text-8xl lg:text-9xl font tracking-tighter text-white"
+                        className="text-5xl sm:text-8xl lg:text-9xl tracking-tighter text-white"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}

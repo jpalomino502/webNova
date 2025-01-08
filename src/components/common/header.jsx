@@ -43,7 +43,7 @@ export default function Header() {
             Servicios
           </a>
           <a href="/sobre-nosotros" className="text-sm text-white uppercase tracking-wider hover:text-gray-300 transition-colors">
-            Sobre Nosotros
+          Nosotros
           </a>
           <a href="/proyectos" className="text-sm text-white uppercase tracking-wider hover:text-gray-300 transition-colors">
             Proyectos
@@ -84,7 +84,7 @@ export default function Header() {
               href="/sobre-nosotros"
               className="block px-3 py-2 text-sm text-white uppercase tracking-wider hover:text-gray-300 rounded-md"
             >
-              Sobre Nosotros
+              Nosotros
             </a>
             <a
               href="/proyectos"

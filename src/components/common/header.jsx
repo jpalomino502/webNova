@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/common/logo.svg';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +33,7 @@ export default function Header() {
     >
       <nav
         className="max-w-xl mx-auto flex items-center justify-between h-12 px-4
-          rounded-full shadow-sm backdrop-blur-lg backdrop-saturate-150 bg-black/[.65]"
+          rounded-3xl shadow-sm backdrop-blur-lg backdrop-saturate-150 bg-black/[.65]"
       >
         <img src={Logo} alt="Logo" className="h-8 invert" />
         <span className="block md:hidden ml-2 text-white text-xl">WebNova</span>

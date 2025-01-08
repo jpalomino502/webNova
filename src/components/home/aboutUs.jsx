@@ -1,19 +1,19 @@
 import Button from "../ui/interactive-hover-button";
 import Logo from "../../assets/home/services/services.webp";
-import Image from "../../assets/home/hero/texture.webp"
+import Image from "../../assets/home/hero/texture.webp";
 
 export default function aboutUs() {
   return (
     <div className="relative min-h-screen bg-white overflow-hidden flex items-center">
-        <div
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-            backgroundImage: `url(${Image})`,
+          backgroundImage: `url(${Image})`,
         }}
-        />
+      />
       <div className="relative max-w-auto lg:px-60 px-10 py-20">
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
-
+        <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-12"> {/* flex-col-reverse for mobile/tablet */}
+          
           <div className="w-full lg:w-1/2 flex justify-center px-4">
             <div className="aspect-square w-full max-w-md lg:max-w-lg">
               <img
@@ -23,19 +23,20 @@ export default function aboutUs() {
               />
             </div>
           </div>
-          <div className="w-full text-right lg:w-1/2 px-4">
-            <h2 className="text-5xl mb-8">Detrás de Webnova
-            </h2>
+
+          <div className="w-full text-left lg:text-right lg:w-1/2 px-4"> {/* Text aligned left on mobile/tablet */}
+            <h2 className="text-5xl mb-8">Nuestra Historia</h2>
             <div className="space-y-6">
               <p className="text-black">
-                En <strong>WebNova</strong>, nos especializamos en ofrecer soluciones digitales innovadoras. Desde el diseño de sitios web modernos hasta estrategias avanzadas de marketing digital, estamos aquí para ayudarte a destacar en línea.
+                En <strong>WebNova</strong>, somos un equipo de visionarios apasionados por transformar el panorama digital. Desde nuestros inicios, nos hemos dedicado a crear soluciones innovadoras que mejoren la presencia en línea de las empresas, sin perder de vista los valores de creatividad, colaboración y calidad.
               </p>
               <p className="text-black">
-                Nuestro equipo de expertos trabaja contigo para construir experiencias únicas que impulsen tu negocio. Con WebNova, llevamos tus ideas al siguiente nivel utilizando las últimas tecnologías y tendencias del mercado.
+                Nuestra filosofía está centrada en la creación de relaciones de largo plazo con nuestros clientes. Sabemos que el éxito digital no solo depende de las herramientas, sino también de entender el propósito y los sueños de cada proyecto. Por eso, trabajamos de cerca con cada uno de nuestros clientes, ayudándoles a evolucionar y crecer en el entorno digital.
               </p>
-              <Button text="Más información" className="pl-4 pr-4" />
+              <Button text="Conoce a WebNova" />
             </div>
           </div>
+
         </div>
       </div>
     </div>

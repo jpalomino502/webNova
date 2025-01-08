@@ -5,26 +5,26 @@ export default function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      name: "Project One",
-      type: "Design",
+      name: "Rediseño Web para Innovatech",
+      type: "Diseño Web",
       year: "2022",
-      description: "Innovation in design patterns",
+      description: "Un rediseño web para una experiencia de usuario más intuitiva y moderna.",
       image: "http://clapat.ro/themes/nanotech/images/02hero.jpg",
     },
     {
       id: 2,
-      name: "Willo",
+      name: "Willo: Identidad de Marca",
       type: "Branding",
       year: "2024",
-      description: "Modern brand identity design",
+      description: "Creación de una identidad de marca contemporánea y memorable para Willo.",
       image: "http://clapat.ro/themes/nanotech/images/02hero.jpg",
     },
     {
       id: 3,
-      name: "Project Three",
-      type: "Development",
+      name: "Plataforma Digital para Startups",
+      type: "Desarrollo Web",
       year: "2023",
-      description: "Creative development solutions",
+      description: "Desarrollo de una plataforma flexible y escalable para startups emergentes.",
       image: "http://clapat.ro/themes/nanotech/images/02hero.jpg",
     },
   ];
@@ -51,11 +51,9 @@ export default function ProjectsSection() {
     <section className="relative min-h-screen bg-black w-full overflow-hidden py-20">
       <div className="relative mx-auto max-w-7xl px-4">
         <div className="mb-20 text-center">
-          <h2 className="text-5xl mb-8 text-white">Innovaciones</h2>
+          <h2 className="text-5xl mb-8 text-white">Nuestros Proyectos</h2>
           <p className="mx-auto max-w-2xl text-white">
-            Phasellus tempus neque sagittis, consequat dui vitae, mattis ligula. Nam consequat
-            luctus libero nec scelerisque. Aliquam odio magna, fermentum quis auctor ut,
-            euismod quis tellus.
+            Cada proyecto que emprendemos es una oportunidad para innovar, crear y aportar valor. Trabajamos codo a codo con nuestros clientes para transformar sus ideas en experiencias digitales únicas que impacten a sus audiencias.
           </p>
         </div>
 
@@ -63,19 +61,18 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`group rounded-lg relative h-[400px] md:h-[600px] transition-all duration-700 ease-in-out
+              className={`group relative h-[400px] md:h-[600px] transition-all duration-700 ease-in-out
                 ${activeProject === index 
                   ? 'z-20 w-full md:w-[600px]' 
-                  : 'w-full md:w-[200px]'
-                }
+                  : 'w-full md:w-[200px]'}
                 ${index === 1 && activeProject !== 0 && activeProject !== 2 
                   ? 'z-20' 
                   : 'z-10'}`}
               onMouseEnter={() => setActiveProject(index)}
             >
-              <div className="relative rounded-lg h-full w-full overflow-hidden transition-all duration-700 ease-in-out bg-black">
+              <div className="relative  h-full w-full overflow-hidden transition-all duration-700 ease-in-out bg-black">
                 {(activeProject === index || isMobile) && (
-                  <div className="absolute rounded-lg left-4 top-4 z-10 bg-white/50 px-2 py-1 text-sm text-black">
+                  <div className="absolute left-4 top-4 z-10 bg-white/50 px-2 py-1 text-sm text-black">
                     {project.year}
                   </div>
                 )}
@@ -83,7 +80,7 @@ export default function ProjectsSection() {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="object-cover w-full h-full rounded-lg"
+                  className="object-cover w-full h-full rounded-xl  "
                 />
               </div>
 
@@ -101,7 +98,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className="mb-20 text-center">
-            <Button text="Ver más" className="pl-4 pr-4" />
+            <Button text="Más proyectos" className="pl-4 pr-4" />
         </div>
 
         {/* <div className="rounded-lg bg-primary/10 p-8 text-center bg-white text-black">

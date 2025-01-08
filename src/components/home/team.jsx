@@ -70,10 +70,8 @@ export default function TeamCarousel() {
         <h2 className="text-4xl md:text-5xl text-white text-center mb-12">
           Nuestro Equipo
         </h2>
-        <p className="mx-auto max-w-2xl text-white mb-20">
-            Phasellus tempus neque sagittis, consequat dui vitae, mattis ligula. Nam consequat
-            luctus libero nec scelerisque. Aliquam odio magna, fermentum quis auctor ut,
-            euismod quis tellus.
+        <p className="mx-auto max-w-2xl text-center text-white mb-20">
+          Somos un equipo apasionado y comprometido con la innovación. Trabajamos juntos para crear soluciones digitales que marquen la diferencia y siempre buscamos aprender y crecer como profesionales.
         </p>
         <Swiper
           modules={[Autoplay]}
@@ -117,4 +115,5 @@ export default function TeamCarousel() {
     </div>
   );
 }
+
 

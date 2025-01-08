@@ -19,7 +19,7 @@ export default function Footer() {
               <li key={item}>
                 <a 
                   href="#" 
-                  className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
                 >
                   {item}
                 </a>
@@ -34,7 +34,7 @@ export default function Footer() {
             <li>
               <a 
                 href="mailto:webnova@webnova.com.co" 
-                className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
+                className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
               >
                 Email
               </a>
@@ -42,7 +42,7 @@ export default function Footer() {
             <li>
               <a 
                 href="https://wa.me/message/4VLAEDVS3JPNN1" 
-                className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
+                className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
               >
                 WhatsApp
               </a>
@@ -60,7 +60,7 @@ export default function Footer() {
               <li key={social.name}>
                 <a 
                   href={social.href}
-                  className="text-gray-400 hover:text-white transition-colors duration-300 text-sm inline-flex items-center group"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 text-sm inline-flex items-center group"
                 >
                   <span className="inline-block group-hover:translate-x-1 transition-transform duration-300">
                     {social.name}

@@ -1,6 +1,6 @@
 import Button from "../ui/interactive-hover-button";
 import Logo from "../../assets/home/services/services.webp";
-import Image from "../../assets/home/hero/texture.webp";
+import Image from "../../assets/common/background/texture.webp";
 
 export default function aboutUs() {
   return (

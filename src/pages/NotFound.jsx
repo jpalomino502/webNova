@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../assets/home/hero/texture.webp';
+import Image from '../assets/common/background/texture.webp';
 
 const NotFound = () => {
   return (

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import texture from "../../assets/home/hero/texture.webp";
+import texture from "../../assets/common/background/texture.webp";
 import { useEffect, useState } from "react";
 
 export default function Hero() {

@@ -1,6 +1,6 @@
 import Button from "../ui/interactive-hover-button";
-import Logo from "../../assets/home/services/services.webp";
-import Image from "../../assets/common/background/texture.webp";
+import Image from "../../assets/home/aboutUs/aboutUs.webp";
+import background from "../../assets/common/background/texture.webp";
 
 export default function aboutUs() {
   return (
@@ -8,16 +8,16 @@ export default function aboutUs() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${Image})`,
+          backgroundImage: `url(${background})`,
         }}
       />
       <div className="relative max-w-auto lg:px-60 px-10 py-20">
-        <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-12"> {/* flex-col-reverse for mobile/tablet */}
+        <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-12">
           
           <div className="w-full lg:w-1/2 flex justify-center px-4">
             <div className="aspect-square w-full max-w-md lg:max-w-lg">
               <img
-                src={Logo}
+                src={Image}
                 alt="Servicios de WebNova"
                 className="w-full h-auto object-contain"
               />

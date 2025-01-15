@@ -1,5 +1,6 @@
 import Button from "../ui/interactive-hover-button";
-import Logo from "../../assets/home/services/services.webp";
+import Image from "../../assets/home/services/services.webp";
+import background from "../../assets/common/background/geometry.webp";
 
 export default function Services() {
   return (
@@ -7,7 +8,7 @@ export default function Services() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("https://tailwindui.com/plus/img/beams-home@95.jpg")',
+          backgroundImage: `url(${background})`,
         }}
       />
       <div className="relative max-w-auto lg:px-60 px-10 py-20">
@@ -21,14 +22,14 @@ export default function Services() {
               <p className="text-black">
                 Nuestro equipo de expertos trabaja contigo para construir experiencias únicas que impulsen tu negocio. Con WebNova, llevamos tus ideas al siguiente nivel utilizando las últimas tecnologías y tendencias del mercado.
               </p>
-              <Button text="Más información" className="pl-4 pr-4" />
+              <Button text="Más información"  onClick={() => window.location.href = '/servicios'} className="pl-4 pr-4" />
             </div>
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center px-4">
             <div className="aspect-square w-full max-w-md lg:max-w-lg">
               <img
-                src={Logo}
+                src={Image}
                 alt="Servicios de WebNova"
                 className="w-full h-auto object-contain"
               />

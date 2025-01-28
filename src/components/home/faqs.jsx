@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import background from "../../assets/common/background/texture.webp";
 
 const faqs = [
   {
@@ -35,7 +36,7 @@ const FAQs = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("https://tailwindui.com/plus/img/beams-home@95.jpg")',
+          backgroundImage: `url(${background})`,
         }}
       />
       <div className="relative z-10 w-full max-w-2xl">

@@ -7,13 +7,13 @@ import Faqs from "../components/home/faqs";
 
 export default function Home() {
     return (
-        <div>
+        <>
         <Hero />
         <Services />
         <Projets />
         <AboutUs />
         <Team />
         <Faqs />
-        </div>
+        </>
     );
 }

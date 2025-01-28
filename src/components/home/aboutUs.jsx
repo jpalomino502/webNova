@@ -24,7 +24,7 @@ export default function aboutUs() {
             </div>
           </div>
 
-          <div className="w-full text-left lg:text-right lg:w-1/2 px-4"> {/* Text aligned left on mobile/tablet */}
+          <div className="w-full text-left lg:text-right lg:w-1/2 px-4">
             <h2 className="text-5xl mb-8">Nuestra Historia</h2>
             <div className="space-y-6">
               <p className="text-black">

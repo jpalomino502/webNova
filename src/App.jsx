@@ -8,13 +8,15 @@ import NotFound from './pages/NotFound';
 export default function App() {
   return (
     <Router>
-      <div>
+      <div className="flex flex-col min-h-screen">
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="servicios" element={<Service />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="servicios" element={<Service />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>

@@ -1,15 +1,8 @@
 import React from 'react';
-import Image from '../assets/common/background/texture.webp';
 
 const NotFound = () => {
   return (
     <div className="min-h-screen text-black flex items-center justify-center p-4">
- <div
-         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-         style={{
-           backgroundImage: `url(${Image})`,
-         }}
-       />
   <div className="max-w-2xl w-full relative">
     <div className="absolute inset-0 overflow-hidden">
       {[...Array(50)].map((_, i) => (

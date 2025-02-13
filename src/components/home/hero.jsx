@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import texture from "../../assets/common/background/texture.webp";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -35,13 +34,6 @@ export default function Hero() {
 
     return (
         <main className="relative h-screen overflow-hidden bg-black fuente_home">
-           <img
-                src={texture}
-                alt="Background texture"
-                style={{ objectFit: "cover" }}
-                quality={100}
-                className="absolute inset-0 z-0 opacity-80"
-            /> 
             <div className="relative z-20 h-full flex items-center justify-center">
                 <div className="text-center flex flex-col justify-center h-full mt-20 sm:mt-32 md:mt-0">
                     <motion.h1

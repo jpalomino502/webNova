@@ -1,16 +1,9 @@
 import Button from "../ui/interactive-hover-button";
 import Image from "../../assets/home/aboutUs/aboutUs.webp";
-import background from "../../assets/common/background/texture.webp";
 
 export default function aboutUs() {
   return (
     <div className="relative min-h-screen bg-white overflow-hidden flex items-center">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${background})`,
-        }}
-      />
       <div className="relative max-w-auto lg:px-60 px-10 py-20">
         <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-12">
           

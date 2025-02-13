@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import background from "../../assets/common/background/texture.webp";
 
 const faqs = [
   {
@@ -32,13 +31,7 @@ const FAQs = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-whie flex flex-col items-center justify-center overflow-hidden px-4" id="faqs">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${background})`,
-        }}
-      />
+    <div className="relative min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden px-4" id="faqs">
       <div className="relative z-10 w-full max-w-2xl">
         <h2 className="text-3xl font-light mb-8 text-center text-black">FAQs de WebNova</h2>
         <dl>

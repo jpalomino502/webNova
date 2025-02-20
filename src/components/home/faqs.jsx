@@ -4,7 +4,7 @@ const faqs = [
   {
     question: "¿Qué servicios ofrece WebNova?",
     answer:
-      "WebNova ofrece servicios de diseño y desarrollo web, optimización SEO, marketing digital, y gestión de marcas en línea para ayudarte a destacar en el mundo digital.",
+      "WebNova ofrece servicios de diseño y desarrollo web, optimización SEO y gestión de marcas en línea para ayudarte a destacar en el mundo digital.",
   },
   {
     question: "¿Cómo puede WebNova mejorar mi presencia online?",
@@ -31,25 +31,25 @@ const FAQs = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden px-4" id="faqs">
+    <div className="relative min-h-screen bg-black text-white flex flex-col items-center justify-center overflow-hidden px-4" id="faqs">
       <div className="relative z-10 w-full max-w-2xl">
-        <h2 className="text-3xl font-light mb-8 text-center text-black">FAQs de WebNova</h2>
+        <h2 className="text-3xl font-light mb-8 text-center text-white">FAQs de WebNova</h2>
         <dl>
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`mb-4 overflow-hidden ${activeIndex === index ? 'shadow-md border' : 'border-b'}`}
+              className={`mb-4 overflow-hidden ${activeIndex === index ? 'shadow-md border border-gray-600' : 'border-b border-gray-600'}`}
             >
               <dt>
                 <button
-                  className="w-full p-4 flex justify-between items-center bg-white text-left transition-all duration-300 ease-in-out focus:outline-none hover:bg-gray-100"
+                  className="w-full p-4 flex justify-between items-center bg-black text-left transition-all duration-300 ease-in-out focus:outline-none hover:bg-zinc-900"
                   onClick={() => toggleFAQ(index)}
                   aria-expanded={activeIndex === index ? "true" : "false"}
                   aria-controls={`faq-answer-${index}`}
                 >
-                  <span className="text-lg transition-transform duration-300">{faq.question}</span>
+                  <span className="text-lg transition-transform duration-300 text-white">{faq.question}</span>
                   <span
-                    className={`transform transition-transform duration-300 text-2xl ${activeIndex === index ? 'rotate-45' : ''}`}
+                    className={`transform transition-transform duration-300 text-2xl text-white ${activeIndex === index ? 'rotate-45' : ''}`}
                   >
                     +
                   </span>
@@ -57,9 +57,9 @@ const FAQs = () => {
               </dt>
               <dd
                 id={`faq-answer-${index}`}
-                className={`bg-white overflow-hidden transition-all duration-300 ease-in-out ${activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                className={`bg-black overflow-hidden transition-all duration-300 ease-in-out ${activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
               >
-                <p className="p-4 text-gray-600">{faq.answer}</p>
+                <p className="p-4 text-gray-300">{faq.answer}</p>
               </dd>
             </div>
           ))}

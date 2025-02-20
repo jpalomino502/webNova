@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/common/header';
-import Footer from './components/common/footer';
-import Home from './pages/home';
-import Service from './pages/service';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Service from './pages/Service';
+import AboutUs from './pages/AboutUs';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="servicios" element={<Service />} />
+            <Route path="sobre-nosotros" element={<AboutUs />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

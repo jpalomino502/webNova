@@ -3,13 +3,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
-import davidChia from "../../assets/home/team/david_chia.webp";
-import mariaHerrera from "../../assets/home/team/maria_herrera.webp";
-import josephPalomino from "../../assets/home/team/joseph_palomino.webp";
-import leonardoWalted from "../../assets/home/team/leonardo_walted.webp";
-import gabrielLozada from "../../assets/home/team/gabriel_lozada.webp";
-import damianMorales from "../../assets/home/team/damian_morales.webp";
-import asrleyRodriguez from "../../assets/home/team/asrley_rodriguez.webp";
+import davidChia from "../../assets/aboutUs/team/david_chia.webp";
+import mariaHerrera from "../../assets/aboutUs/team/maria_herrera.webp";
+import josephPalomino from "../../assets/aboutUs/team/joseph_palomino.webp";
+import leonardoWalted from "../../assets/aboutUs/team/leonardo_walted.webp";
+import gabrielLozada from "../../assets/aboutUs/team/gabriel_lozada.webp";
+import damianMorales from "../../assets/aboutUs/team/damian_morales.webp";
+import asrleyRodriguez from "../../assets/aboutUs/team/asrley_rodriguez.webp";
 
 const teamMembers = [
   {

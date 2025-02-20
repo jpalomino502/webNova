@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
 export default function Footer() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    setIsVisible(true);
-  }, []);
+    setIsVisible(true)
+  }, [])
 
   return (
-    <footer className="bg-white text-black py-16 px-8">
+    <footer className="bg-black text-white py-16 px-8">
       <div className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 opacity-0 transition-all duration-1000 ${
         isVisible ? 'opacity-100 translate-y-0' : 'translate-y-10'
       }`}>
@@ -19,7 +19,7 @@ export default function Footer() {
               <li key={item}>
                 <a 
                   href="#" 
-                  className="text-black hover:text-gray-700 transition-colors duration-300 text-sm"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
                 >
                   {item}
                 </a>
@@ -34,7 +34,7 @@ export default function Footer() {
             <li>
               <a 
                 href="mailto:webnova@webnova.com.co" 
-                className="text-black hover:text-gray-700 transition-colors duration-300 text-sm"
+                className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
               >
                 Email
               </a>
@@ -42,7 +42,7 @@ export default function Footer() {
             <li>
               <a 
                 href="https://wa.me/message/4VLAEDVS3JPNN1" 
-                className="text-black hover:text-gray-700 transition-colors duration-300 text-sm"
+                className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
               >
                 WhatsApp
               </a>
@@ -60,7 +60,7 @@ export default function Footer() {
               <li key={social.name}>
                 <a 
                   href={social.href}
-                  className="text-black hover:text-gray-700 transition-colors duration-300 text-sm inline-flex items-center group"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 text-sm inline-flex items-center group"
                 >
                   <span className="inline-block group-hover:translate-x-1 transition-transform duration-300">
                     {social.name}
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className={`max-w-7xl mx-auto mt-16 pt-8 border-t border-black grid grid-cols-1 md-grid-cols-2 gap-8 opacity-0 transition-all duration-1000 delay-300 ${
+      <div className={`max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-800 grid grid-cols-1 md:grid-cols-2 gap-8 opacity-0 transition-all duration-1000 delay-300 ${
         isVisible ? 'opacity-100 translate-y-0' : 'translate-y-10'
       }`}>
         <div>
@@ -91,5 +91,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

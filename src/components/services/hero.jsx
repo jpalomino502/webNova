@@ -1,33 +1,20 @@
-import background from '../../assets/common/background/geometry.webp';
 import React from "react";
 
-export default function Hero() {
+const Hero = () => {
   return (
-    <section className="relative h-screen bg-white overflow-hidden">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${background})`,
-        }}
-      />
-
-      {/* Content section */}
-      <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-6 lg:px-20 pb-6 md:pb-6 lg:pb-12 text-black">
-        <div className="flex flex-col md:flex-col lg:flex-row justify-between w-full gap-6">
-          {/* Title */}
-          <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-8xl font-semibold">
-            Soluciones a<br />Tu Alcance
+    <section className="white h-screen py-20 bg-white relative overflow-hidden">
+      <div className="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-6 lg:px-28 pb-6 md:pb-6 lg:pb-12 text-black">
+        <div className="flex flex-col justify-between w-full gap-6 text-center">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl leading-tight">
+            Lo que hacemos, lo hacemos<br />
+            <span className="bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 text-transparent bg-clip-text inline-block">
+              con pasión y visión
+            </span>
           </h1>
-
-          {/* Description */}
-          <p className="text-black text-left md:text-left lg:text-right text-base sm:text-lg md:max-w-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            eget efficitur felis. Maecenas rhoncus, mi nec suscipit mollis,
-            lacus velit aliquet lacus, et molestie turpis ligula ut neque.
-          </p>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Hero;

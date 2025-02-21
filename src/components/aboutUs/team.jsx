@@ -65,12 +65,10 @@ const teamMembers = [
 
 export default function TeamCarousel() {
   return (
-    <div className="bg-black min-h-screen py-16 px-4" id="team">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl text-white text-center mb-12">
-          Nuestro Equipo
-        </h2>
-        <p className="mx-auto max-w-2xl text-center text-white mb-20">
+    <div className="black bg-black min-h-screen" >
+      <div className="relative max-w-auto lg:px-60 px-10 py-20">
+      <h2 className="text-5xl mb-8 text-white lg:text-center">   Nuestro Equipo</h2>
+        <p className="mx-auto max-w-2xl lg:text-center text-white mb-20">
           Somos un equipo apasionado y comprometido con la innovación. Trabajamos juntos para crear soluciones digitales que marquen la diferencia y siempre buscamos aprender y crecer como profesionales.
         </p>
         <Swiper

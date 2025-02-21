@@ -38,13 +38,13 @@ export default function ProjectsSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-black w-full overflow-hidden py-20">
+    <section className="black relative min-h-screen bg-black w-full overflow-hidden pb-16">
       <div className="absolute top-0 -z-10 h-full w-full bg-white">
         <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"></div>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4">
-        <div className="mb-20 text-center">
+      <div className="relative max-w-auto lg:px-60 px-10 py-20">
+        <div className="mb-20 lg:text-center">
           <h2 className="text-5xl mb-8 text-white">Nuestros Proyectos</h2>
           <p className="mx-auto max-w-2xl text-white">
             Cada proyecto que emprendemos es una oportunidad para innovar, crear y aportar valor. Trabajamos codo a codo con nuestros clientes para transformar sus ideas en experiencias digitales únicas que impacten a sus audiencias.

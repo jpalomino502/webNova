@@ -31,9 +31,9 @@ const FAQs = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-black text-white flex flex-col items-center justify-center overflow-hidden px-4" id="faqs">
-      <div className="relative z-10 w-full max-w-2xl">
-        <h2 className="text-3xl font-light mb-8 text-center text-white">FAQs de WebNova</h2>
+    <div className="black crelative bg-black text-white flex flex-col items-center justify-center overflow-hidden py-24" id="faqs">
+      <div className="relative max-w-auto lg:px-60 px-10">
+      <h2 className="text-3xl font-light mb-8 text-center text-white">FAQs de WebNova</h2>
         <dl>
           {faqs.map((faq, index) => (
             <div

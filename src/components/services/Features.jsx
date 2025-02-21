@@ -2,8 +2,8 @@ import React from 'react';
 
 const Features = () => {
   return (
-    <div className="white bg-white min-h-screen py-20">
-      <div className="relative max-w-auto lg:px-60 px-10">
+    <div className="white bg-white min-h-screen">
+      <div className="relative max-w-auto lg:px-60 py-20 px-10">
       <div className="mb-10 lg:text-center">
         <h2 className="text-5xl mb-8 text-black">Lo que hacemos</h2>
         <p className="mx-auto max-w-2xl text-black">

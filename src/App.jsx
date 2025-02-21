@@ -3,6 +3,7 @@ import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Projects from './pages/Projects';
 import Service from './pages/Service';
 import AboutUs from './pages/AboutUs';
 
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="servicios" element={<Service />} />
             <Route path="sobre-nosotros" element={<AboutUs />} />
+            <Route path="proyectos" element={<Projects />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

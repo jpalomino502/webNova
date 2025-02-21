@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const Hero = () => {
-  const words = ["INNOVACIÓN", "CREATIVIDAD", "TECNOLOGÍA", "SOLUCIONES"];
+export default function Hero() {
+  const words = ["AUTENTICIDAD", "INTEGRIDAD", "EXCELENCIA", "CONFIANZA"];
   const [currentWord, setCurrentWord] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(150);
 
   useEffect(() => {
-    const current = words[currentWord];
     const timer = setTimeout(() => {
+      const current = words[currentWord];
       if (isDeleting) {
         setText(current.substring(0, text.length - 1));
         setDelta(100);
@@ -18,7 +18,6 @@ const Hero = () => {
         setText(current.substring(0, text.length + 1));
         setDelta(150);
       }
-
       if (!isDeleting && text === current) {
         setTimeout(() => setIsDeleting(true), 1500);
       } else if (isDeleting && text === '') {
@@ -27,7 +26,6 @@ const Hero = () => {
         setDelta(500);
       }
     }, delta);
-
     return () => clearTimeout(timer);
   }, [text, isDeleting, currentWord, delta]);
 
@@ -57,6 +55,4 @@ const Hero = () => {
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

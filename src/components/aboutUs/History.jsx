@@ -1,5 +1,4 @@
 import { useState, useLayoutEffect } from "react";
-import Image from '../../assets/aboutUs/history/history.webp'
 
 export default function HistorySection() {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,9 +25,6 @@ export default function HistorySection() {
           <p className="mx-auto max-w-2xl text-white">
             WebNova nació en Bucaramanga, Colombia, en 2024, conformado por un grupo de estudiantes apasionados por la tecnología, la innovación y la creatividad. Con el deseo de transformar ideas en realidades digitales, nos hemos propuesto marcar la diferencia en el mundo digital.
           </p>
-        </div>
-        <div className="flex justify-center">
-          <img src={Image} alt="Nuestra historia" className="max-w-7xl rounded-lg shadow-lg" />
         </div>
       </div>
     </section>

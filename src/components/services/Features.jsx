@@ -46,7 +46,7 @@ const Features = () => {
             </div>
           </div>
 
-          <div className="md:col-start-1 md:row-start-2 pt-3 md:pt-0">
+          <div className="md:col-start-1 md:row-start-2 pt-3 ">
             <div className="group relative overflow-hidden rounded-2xl bg-black aspect-[4/3] cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 via-red-500/20"></div>
               <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
@@ -63,7 +63,7 @@ const Features = () => {
             </div>
           </div>
 
-          <div className="md:col-start-2 md:row-start-2 pt-3 md:pt-0">
+          <div className="md:col-start-2 md:row-start-2 pt-3">
             <div className="group relative overflow-hidden rounded-2xl bg-black aspect-[4/3] cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 via-blue-500/20"></div>
               <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">

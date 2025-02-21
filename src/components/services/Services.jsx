@@ -15,7 +15,7 @@ const Services = () => {
           </div>
 
           <div className="w-full text-left lg:text-right lg:w-1/2">
-            <h2 className="text-5xl mb-8 text-white">Nuestros Servicios</h2>
+            <h2 className="text-5xl mb-8 text-white pt-28">Nuestros Servicios</h2>
 
             <div className="space-y-6">
               <p className="text-white">

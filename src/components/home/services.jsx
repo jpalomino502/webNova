@@ -7,7 +7,7 @@ export default function Services() {
       <div className="relative max-w-auto lg:px-60 px-10 py-20">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
           <div className="w-full lg:w-1/2">
-            <h2 className="text-5xl mb-8">Servicios de WebNova</h2>
+            <h2 className="text-5xl mb-8 pt-24">Servicios de WebNova</h2>
             <div className="space-y-6">
               <p className="text-black">
                 En <strong>WebNova</strong>, nos especializamos en ofrecer soluciones digitales innovadoras. Desde el diseño de sitios web modernos hasta estrategias avanzadas de marketing digital, estamos aquí para ayudarte a destacar en línea.

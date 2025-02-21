@@ -3,8 +3,8 @@ import React from 'react';
 const Features = () => {
   return (
     <div className="white bg-white min-h-screen py-20">
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-10 text-center">
+      <div className="relative max-w-auto lg:px-60 px-10">
+      <div className="mb-10 lg:text-center">
         <h2 className="text-5xl mb-8 text-black">Lo que hacemos</h2>
         <p className="mx-auto max-w-2xl text-black">
         Transformamos ideas en realidades digitales, creando soluciones innovadoras que impulsan el futuro.
@@ -31,7 +31,6 @@ const Features = () => {
             </div>
           </div>
 
-          {/* Tarjeta 2: Apps Móviles */}
           <div className="md:col-start-3 md:row-span-2 flex">
             <div className="relative overflow-hidden rounded-2xl bg-black aspect-[4/3] md:aspect-auto w-full">
               <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 via-purple-500/20 to-transparent"></div>
@@ -47,7 +46,6 @@ const Features = () => {
             </div>
           </div>
 
-          {/* Tarjeta 3: Desarrollo Web */}
           <div className="md:col-start-1 md:row-start-2 pt-3 md:pt-0">
             <div className="group relative overflow-hidden rounded-2xl bg-black aspect-[4/3] cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 via-red-500/20"></div>
@@ -65,7 +63,6 @@ const Features = () => {
             </div>
           </div>
 
-          {/* Tarjeta 4: Diseño UI/UX */}
           <div className="md:col-start-2 md:row-start-2 pt-3 md:pt-0">
             <div className="group relative overflow-hidden rounded-2xl bg-black aspect-[4/3] cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 via-blue-500/20"></div>

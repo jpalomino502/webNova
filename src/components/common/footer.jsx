@@ -13,19 +13,10 @@ export default function Footer() {
         isVisible ? 'opacity-100 translate-y-0' : 'translate-y-10'
       }`}>
         <div className="space-y-6">
-          <h3 className="text-sm font-medium tracking-wider mb-4">SERVICIOS</h3>
-          <ul className="space-y-3">
-            {['Diseño Web', 'Desarrollo Web', 'SEO', 'Marketing Digital', 'Gestión de Marcas'].map((item) => (
-              <li key={item}>
-                <a 
-                  href="#" 
-                  className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <h3 className="text-sm font-medium tracking-wider mb-4">INNOVANDO TU PRESENCIA DIGITAL</h3>
+          <p className="text-gray-300 text-sm">
+            Creamos experiencias digitales impactantes para potenciar tu marca y hacer crecer tu negocio en línea.
+          </p>
         </div>
 
         <div className="space-y-6">
@@ -54,8 +45,8 @@ export default function Footer() {
           <h3 className="text-sm font-medium tracking-wider mb-4">SÍGUENOS</h3>
           <ul className="space-y-3">
             {[ 
-              { name: 'Instagram', href: 'https://co.linkedin.com/company/webnova-co' },
-              { name: 'LinkedIn', href: 'https://www.instagram.com/webnova_co/' }
+              { name: 'LinkedIn', href: 'https://co.linkedin.com/company/webnova-co' },
+              { name: 'Instagram', href: 'https://www.instagram.com/webnova_co/' }
             ].map((social) => (
               <li key={social.name}>
                 <a 

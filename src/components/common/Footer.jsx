@@ -14,14 +14,14 @@ export default function Footer() {
         isVisible ? 'opacity-100 translate-y-0' : 'translate-y-10'
       }`}>
         <div className="space-y-6">
-          <h3 className="text-sm font-medium tracking-wider mb-4">INNOVANDO TU PRESENCIA DIGITAL</h3>
+          <h3 className="text-sm  tracking-wider mb-4">INNOVANDO TU PRESENCIA DIGITAL</h3>
           <p className="text-gray-300 text-sm">
             Creamos experiencias digitales impactantes para potenciar tu marca y hacer crecer tu negocio en línea.
           </p>
         </div>
 
         <div className="space-y-6">
-          <h3 className="text-sm font-medium tracking-wider mb-4">CONTACTO</h3>
+          <h3 className="text-sm  tracking-wider mb-4">CONTACTO</h3>
           <ul className="space-y-3">
             <li>
               <a 
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         <div className="space-y-6">
-          <h3 className="text-sm font-medium tracking-wider mb-4">SÍGUENOS</h3>
+          <h3 className="text-sm  tracking-wider mb-4">SÍGUENOS</h3>
           <ul className="space-y-3">
             {[ 
               { name: 'LinkedIn', href: 'https://co.linkedin.com/company/webnova-co' },
@@ -79,7 +79,7 @@ export default function Footer() {
         isVisible ? 'opacity-100 translate-y-0' : 'translate-y-10'
       }`}>
         <div>
-          <h4 className="text-sm font-medium mb-2">WEBNOVA</h4>
+          <h4 className="text-sm  mb-2">WEBNOVA</h4>
         </div>
       </div>
     </footer>

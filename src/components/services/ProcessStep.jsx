@@ -5,7 +5,7 @@ const OurProcess = () => {
     <div className="black bg-black min-h-screen">
       <div className="relative max-w-auto lg:px-60 py-20 px-10">
         <div className="mb-20 lg:text-center">
-          <h2 className="text-5xl mb-8 text-white font-light tracking-tight">
+          <h2 className="text-3xl md:text-4xl mb-8 text-white  tracking-tight">
             Nuestro Proceso
           </h2>
           <p className="mx-auto max-w-2xl text-white text-lg">
@@ -21,7 +21,7 @@ const OurProcess = () => {
               01
             </span>
             <div className="pl-8 pt-6">
-              <h3 className="text-white text-2xl mb-4 font-light">Análisis</h3>
+              <h3 className="text-white text-2xl mb-4 ">Análisis</h3>
               <p className="text-white">
                 Definición de requerimientos técnicos y funcionales. 
                 Elaboración del cronograma estratégico.
@@ -34,7 +34,7 @@ const OurProcess = () => {
               02
             </span>
             <div className="pl-8 pt-6">
-              <h3 className="text-white text-2xl mb-4 font-light">Diseño</h3>
+              <h3 className="text-white text-2xl mb-4 ">Diseño</h3>
               <p className="text-white">
                 Creación de wireframes y mockups inspiradores.
                 Validación de experiencia de usuario.
@@ -47,7 +47,7 @@ const OurProcess = () => {
               03
             </span>
             <div className="pl-8 pt-6">
-              <h3 className="text-white text-2xl mb-4 font-light">Desarrollo</h3>
+              <h3 className="text-white text-2xl mb-4 ">Desarrollo</h3>
               <p className="text-white">
                 Implementación de interfaces modernas.
                 Integración de tecnologías avanzadas.
@@ -60,7 +60,7 @@ const OurProcess = () => {
               04
             </span>
             <div className="pl-8 pt-6">
-              <h3 className="text-white text-2xl mb-4 font-light">Lanzamiento</h3>
+              <h3 className="text-white text-2xl mb-4 ">Lanzamiento</h3>
               <p className="text-white">
                 Optimización de rendimiento.
                 Despliegue y monitorización continua.

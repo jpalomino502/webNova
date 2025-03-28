@@ -17,7 +17,7 @@ export default function aboutUs() {
           </div>
 
           <div className="w-full text-left lg:text-right lg:w-1/2">
-            <h2 className="text-5xl mb-8">Nuestra Historia</h2>
+            <h2 className="text-3xl md:text-4xl mb-8">Nuestra Historia</h2>
             <div className="space-y-6">
               <p className="text-black">
                 En <strong>WebNova</strong>, somos un equipo de visionarios apasionados por transformar el panorama digital. Desde nuestros inicios, nos hemos dedicado a crear soluciones innovadoras que mejoren la presencia en línea de las empresas, sin perder de vista los valores de creatividad, colaboración y calidad.

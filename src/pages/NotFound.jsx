@@ -31,7 +31,7 @@ const NotFound = () => {
         Volver al inicio
       </a>
 
-      <div className="flex items-center justify-center text-[180px] font-bold leading-none">
+      <div className="flex items-center justify-center text-[180px] leading-none">
         <div className="relative flex items-center justify-center">
           4
           <div className="relative w-[160px] h-[160px]">

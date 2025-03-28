@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="relative z-20 h-full flex items-center justify-center">
         <div className="text-center flex flex-col justify-center h-full mt-20 sm:mt-32 md:mt-0">
           <motion.h1
-            className="text-6xl md:text-7xl lg:text-8xl text-white tracking-tighter"
+            className="text-5xl md:text-6xl lg:text-7xl lg:text-8xl text-white tracking-tighter"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -53,7 +53,7 @@ export default function Hero() {
             </span>
           </motion.h1>
           <motion.h2
-            className="text-6xl md:text-7xl lg:text-8xl tracking-tighter text-white"
+            className="text-5xl md:text-6xl lg:text-7xl tracking-tighter text-white"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}

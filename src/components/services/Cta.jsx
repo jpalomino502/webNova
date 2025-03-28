@@ -4,7 +4,7 @@ import Button from "../ui/interactive-hover-button";
 
 const Cta = () => {
   const t = {
-    heading: "Descubre nuestros servicios para impulsar tu negocio",
+    heading: "Impulsa tu negocio con WebNova",
     paragraph:
       "En WebNova ofrecemos soluciones tecnológicas a medida para llevar tu empresa al siguiente nivel.",
     contact:
@@ -36,7 +36,7 @@ const Cta = () => {
             className="flex lg:justify-center"
           >
             <Button
-              text="Conoce a WebNova"
+              text="Contáctanos"
               onClick={() =>
                 window.location.href = "https://wa.me/message/4VLAEDVS3JPNN1"
               }

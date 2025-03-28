@@ -67,7 +67,7 @@ export default function TeamCarousel() {
   return (
     <div className="black bg-black min-h-screen" >
       <div className="relative max-w-auto lg:px-60 px-10 py-20">
-      <h2 className="text-5xl mb-8 text-white lg:text-center">   Nuestro Equipo</h2>
+      <h2 className="text-3xl md:text-4xl mb-8 text-white lg:text-center">Nuestro Equipo</h2>
         <p className="mx-auto max-w-2xl lg:text-center text-white mb-20">
           Somos un equipo apasionado y comprometido con la innovación. Trabajamos juntos para crear soluciones digitales que marquen la diferencia y siempre buscamos aprender y crecer como profesionales.
         </p>
@@ -100,7 +100,7 @@ export default function TeamCarousel() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-white text-xl font-medium">{member.name}</h3>
+                  <h3 className="text-white text-xl ">{member.name}</h3>
                   <p className="text-white text-sm">{member.role}</p>
                   <p className="text-white text-xs">{member.career}</p>
                   <p className="text-white text-xs">{member.university}</p>

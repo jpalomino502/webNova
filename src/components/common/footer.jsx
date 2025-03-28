@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 export default function Footer() {
   const [isVisible, setIsVisible] = useState(false)
 
+  
   useEffect(() => {
     setIsVisible(true)
   }, [])

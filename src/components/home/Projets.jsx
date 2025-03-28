@@ -2,7 +2,7 @@ import { useState, useLayoutEffect } from "react";
 import Button from "../ui/interactive-hover-button-black";
 import chefSyncImage from "../../assets/home/projets/chefsync.png";
 import ravenWearImage from "../../assets/home/projets/ravenwear.png";
-import comingSoonImage from "../../assets/home/projets/comingsoon.png";
+import comingSoonImage from "../../assets/home/projets/comingSoon.png";
 
 export default function ProjectsSection() {
   const projects = [

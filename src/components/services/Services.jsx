@@ -20,14 +20,6 @@ const Services = () => {
               </p>
             </div>
           </div>
-
-          <div className="w-full flex items-center justify-center">
-            <img
-              src="/ruta/de/tu-imagen.jpg"
-              alt="Descripción de la imagen"
-              className="max-w-full h-auto"
-            />
-          </div>
         </div>
       </div>
     </div>

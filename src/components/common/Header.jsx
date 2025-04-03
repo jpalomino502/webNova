@@ -33,7 +33,7 @@ export default function Header() {
       setIsVisible(currentScrollY <= 150 || currentScrollY < lastScrollY);
       setLastScrollY(currentScrollY);
       detectTheme();
-      setIsMenuOpen(false); // Cerrar el menú al hacer scroll
+      setIsMenuOpen(false);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -73,7 +73,7 @@ export default function Header() {
     >
       <nav
         className={`max-w-md mx-auto flex items-center justify-between h-12 px-4 rounded-3xl shadow-sm backdrop-blur-lg backdrop-saturate-150 ${
-          theme === "white" ? "bg-white" : "bg-black"
+          theme === "white" ? "bg-white/60" : "bg-black/60"
         }`}
       >
         <a href="/">

@@ -14,10 +14,10 @@ const OurProcess = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 relative">
-          <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-purple-500 to-transparent hidden md:block" />
+          <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-zinc-200 to-transparent hidden md:block" />
 
           <div className="group relative hover:translate-y-[-5px] transition-all duration-300 ease-out">
-            <span className="absolute -left-4 text-purple-500 text-8xl  opacity-20 group-hover:opacity-30 transition-opacity">
+            <span className="absolute -left-4 text-zinc-200 text-8xl  opacity-20 group-hover:opacity-30 transition-opacity">
               01
             </span>
             <div className="pl-8 pt-6">
@@ -30,7 +30,7 @@ const OurProcess = () => {
           </div>
 
           <div className="group relative hover:translate-y-[-5px] transition-all duration-300 ease-out">
-            <span className="absolute -left-4 text-purple-500 text-8xl  opacity-20 group-hover:opacity-30 transition-opacity">
+            <span className="absolute -left-4 text-zinc-200 text-8xl  opacity-20 group-hover:opacity-30 transition-opacity">
               02
             </span>
             <div className="pl-8 pt-6">
@@ -43,7 +43,7 @@ const OurProcess = () => {
           </div>
 
           <div className="group relative hover:translate-y-[-5px] transition-all duration-300 ease-out">
-            <span className="absolute -left-4 text-purple-500 text-8xl  opacity-20 group-hover:opacity-30 transition-opacity">
+            <span className="absolute -left-4 text-zinc-200 text-8xl  opacity-20 group-hover:opacity-30 transition-opacity">
               03
             </span>
             <div className="pl-8 pt-6">
@@ -56,7 +56,7 @@ const OurProcess = () => {
           </div>
 
           <div className="group relative hover:translate-y-[-5px] transition-all duration-300 ease-out">
-            <span className="absolute -left-4 text-purple-500 text-8xl  opacity-20 group-hover:opacity-30 transition-opacity">
+            <span className="absolute -left-4 text-zinc-200 text-8xl  opacity-20 group-hover:opacity-30 transition-opacity">
               04
             </span>
             <div className="pl-8 pt-6">

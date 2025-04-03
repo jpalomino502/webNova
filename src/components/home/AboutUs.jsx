@@ -22,9 +22,6 @@ export default function aboutUs() {
               <p className="text-black">
                 En <strong>WebNova</strong>, somos un equipo de visionarios apasionados por transformar el panorama digital. Desde nuestros inicios, nos hemos dedicado a crear soluciones innovadoras que mejoren la presencia en línea de las empresas, sin perder de vista los valores de creatividad, colaboración y calidad.
               </p>
-              <p className="text-black">
-                Nuestra filosofía está centrada en la creación de relaciones de largo plazo con nuestros clientes. Sabemos que el éxito digital no solo depende de las herramientas, sino también de entender el propósito y los sueños de cada proyecto. Por eso, trabajamos de cerca con cada uno de nuestros clientes, ayudándoles a evolucionar y crecer en el entorno digital.
-              </p>
               <Button text="Conoce a WebNova" onClick={() => window.location.href = '/sobre-nosotros'} />
             </div>
           </div>

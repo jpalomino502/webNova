@@ -2,7 +2,7 @@ import React from 'react';
 
 const NotFound = () => {
   return (
-    <div className="min-h-screen text-black flex items-center justify-center p-4">
+    <div className="min-h-screen white text-black flex items-center justify-center p-4">
   <div className="max-w-2xl w-full relative">
     <div className="absolute inset-0 overflow-hidden">
       {[...Array(50)].map((_, i) => (

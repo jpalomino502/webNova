@@ -60,26 +60,30 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`group relative h-[500px] md:h-[700px] transition-all duration-300 ease-in-out
+              className={`group relative h-[500px] transition-all duration-300 ease-in-out
                 ${isMobile || activeProject === index ? "z-20 w-full md:w-[550px] opacity-100" : "w-full md:w-[200px] opacity-50"}
                 ${index === 1 && activeProject !== 0 && activeProject !== 2 ? "z-20" : "z-10"}`}
               onMouseEnter={() => setActiveProject(index)}
+              onMouseLeave={() => setActiveProject(activeProject)}
             >
               <div className="relative h-full w-full overflow-hidden transition-all duration-300 ease-in-out rounded-3xl">
                 <img src={project.image} alt={project.name} className="rounded-3xl w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" />
                 <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent rounded-b-3xl"></div>
               </div>
 
-              <div className="absolute bottom-4 left-4 right-4 text-white transition-opacity duration-200">
-                <h3 className="text-xl">{project.name}</h3>
-                <p className="mt-2 text-sm">{project.description}</p>
-              </div>
+              {/* Condición para mostrar el texto solo cuando el proyecto esté activo */}
+              {(isMobile || activeProject === index) && (
+                <div className="absolute bottom-4 left-4 right-4 text-white transition-opacity duration-200">
+                  <h3 className="text-xl">{project.name}</h3>
+                  <p className="mt-2 text-sm">{project.description}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
 
         <div className="mt-24 text-center">
-          <Button text="Más proyectos" className="pl-4 pr-4"  onClick={() => window.location.href = '/proyectos'} />
+          <Button text="Más proyectos" className="pl-4 pr-4" onClick={() => window.location.href = '/proyectos'} />
         </div>
       </div>
     </section>

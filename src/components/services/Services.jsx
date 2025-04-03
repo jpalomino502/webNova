@@ -13,8 +13,6 @@ const Services = () => {
               <p className="text-white">
                 En WebNova no solo desarrollamos soluciones; las creamos con precisión y pasión.
                 Utilizamos tecnología de vanguardia para transformar cada desafío digital en una experiencia única.
-              </p>
-              <p className="text-white">
                 Desde sitios web responsivos hasta aplicaciones interactivas, fusionamos innovación y eficiencia
                 para impulsar tu negocio al futuro. ¡Descubre cómo podemos revolucionar tu presencia en línea!
               </p>

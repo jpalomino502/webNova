@@ -1,40 +1,43 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
 export default function Footer() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
-  
   useEffect(() => {
-    setIsVisible(true)
-  }, [])
+    setIsVisible(true);
+  }, []);
 
   return (
-    <footer className="black bg-black text-white py-16 px-8">
-      <div className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 opacity-0 transition-all duration-1000 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'translate-y-10'
-      }`}>
-        <div className="space-y-6">
-          <h3 className="text-sm  tracking-wider mb-4">INNOVANDO TU PRESENCIA DIGITAL</h3>
-          <p className="text-gray-300 text-sm">
+    <footer className="bg-black text-white py-16 px-8">
+      <div
+        className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 transition-all duration-1000 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
+        {/* Mensaje principal */}
+        <div className="space-y-5">
+          <h3 className="text-sm tracking-wide">Innovando tu presencia digital</h3>
+          <p className="text-white text-sm leading-relaxed">
             Creamos experiencias digitales impactantes para potenciar tu marca y hacer crecer tu negocio en línea.
           </p>
         </div>
 
-        <div className="space-y-6">
-          <h3 className="text-sm  tracking-wider mb-4">CONTACTO</h3>
+        {/* Contacto */}
+        <div className="space-y-5">
+          <h3 className="text-sm tracking-wide">Contacto</h3>
           <ul className="space-y-3">
             <li>
-              <a 
-                href="mailto:webnova@webnova.com.co" 
-                className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
+              <a
+                href="mailto:webnova@webnova.com.co"
+                className="text-white hover:opacity-80 transition-opacity duration-300 text-sm"
               >
                 Email
               </a>
             </li>
             <li>
-              <a 
-                href="https://wa.me/message/4VLAEDVS3JPNN1" 
-                className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
+              <a
+                href="https://wa.me/message/4VLAEDVS3JPNN1"
+                className="text-white hover:opacity-80 transition-opacity duration-300 text-sm"
               >
                 WhatsApp
               </a>
@@ -42,32 +45,20 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="space-y-6">
-          <h3 className="text-sm  tracking-wider mb-4">SÍGUENOS</h3>
+        {/* Redes Sociales */}
+        <div className="space-y-5">
+          <h3 className="text-sm tracking-wide">Síguenos</h3>
           <ul className="space-y-3">
-            {[ 
-              { name: 'LinkedIn', href: 'https://co.linkedin.com/company/webnova-co' },
-              { name: 'Instagram', href: 'https://www.instagram.com/webnova_co/' }
+            {[
+              { name: "LinkedIn", href: "https://co.linkedin.com/company/webnova-co" },
+              { name: "Instagram", href: "https://www.instagram.com/webnova_co/" },
             ].map((social) => (
               <li key={social.name}>
-                <a 
+                <a
                   href={social.href}
-                  className="text-gray-300 hover:text-white transition-colors duration-300 text-sm inline-flex items-center group"
+                  className="text-white hover:opacity-80 transition-opacity duration-300 text-sm"
                 >
-                  <span className="inline-block group-hover:translate-x-1 transition-transform duration-300">
-                    {social.name}
-                  </span>
-                  <svg 
-                    className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
-                    viewBox="0 0 20 20" 
-                    fill="currentColor"
-                  >
-                    <path 
-                      fillRule="evenodd" 
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" 
-                      clipRule="evenodd" 
-                    />
-                  </svg>
+                  {social.name}
                 </a>
               </li>
             ))}
@@ -75,13 +66,15 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className={`max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-800 grid grid-cols-1 md:grid-cols-2 gap-8 opacity-0 transition-all duration-1000 delay-300 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'translate-y-10'
-      }`}>
-        <div>
-          <h4 className="text-sm  mb-2">WEBNOVA</h4>
-        </div>
+      {/* Línea divisoria y créditos */}
+      <div
+        className={`max-w-7xl mx-auto mt-16 pt-8 border-t border-white/20 flex flex-col md:flex-row items-center justify-between transition-all duration-1000 delay-300 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
+        <p className="text-white text-sm">© 2024 WebNova. Todos los derechos reservados.</p>
+        <p className="text-white text-xs mt-3 md:mt-0">Desarrollado por WebNova</p>
       </div>
     </footer>
-  )
+  );
 }

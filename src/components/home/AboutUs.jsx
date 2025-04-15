@@ -5,7 +5,7 @@ export default function aboutUs() {
   return (
     <div className="white relative min-h-screen bg-white overflow-hidden flex items-center">
       <div className="relative max-w-auto lg:px-60 px-10 py-20">
-        <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="aspect-square w-full max-w-md lg:max-w-lg">
               <img

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Features = () => {
+function Features() {
   return (
     <div className="white bg-white min-h-screen">
       <div className="relative max-w-auto lg:px-60 py-20 px-10">
@@ -11,7 +11,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2">
           <div className="md:col-span-2 md:row-span-1">
             <div className="relative overflow-hidden rounded-3xl bg-black aspect-[4/3] md:aspect-[16/6]">
               <div className="relative h-full flex flex-col justify-between p-8">
@@ -41,7 +41,7 @@ const Features = () => {
                     <div className="w-2 h-2 rounded-full bg-white/30"></div>
                     <div className="w-2 h-2 rounded-full bg-white/30"></div>
                   </div>
-                                  </div>
+                </div>
                 <p className=" text-white/80 ">
                   Soluciones móviles innovadoras que llevan tu negocio al siguiente nivel.
                 </p>
@@ -50,7 +50,7 @@ const Features = () => {
           </div>
 
           <div className="md:col-start-1 md:row-start-2 pt-3">
-            <div className="group relative overflow-hidden rounded-3xl bg-black aspect-[4/3] cursor-pointer">
+            <div className="group relative overflow-hidden rounded-3xl bg-black aspect-[4/3]">
               <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
                 <div className="flex justify-between items-start">
                   <h3 className="text-2xl ">Desarrollo Web</h3>
@@ -66,7 +66,7 @@ const Features = () => {
           </div>
 
           <div className="md:col-start-2 md:row-start-2 pt-3">
-            <div className="group relative overflow-hidden rounded-3xl bg-black aspect-[4/3] cursor-pointer">
+            <div className="group relative overflow-hidden rounded-3xl bg-black aspect-[4/3]">
               <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
                 <div className="flex justify-between items-start">
                   <h3 className="text-2xl ">Diseño UI/UX</h3>
@@ -85,6 +85,6 @@ const Features = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Features;

@@ -126,7 +126,12 @@ const ProyectoCard = ({ proyecto, isLarge = false, onOpenModal }) => {
   )
 }
 
-const ProximamenteCard = () => {
+function ProximamenteCard() {
+  const handleSubscribeClick = () => {
+    const whatsappUrl = "https://wa.me/message/4VLAEDVS3JPNN1";
+    window.location.href = whatsappUrl;
+  };
+
   return (
     <div className="group relative overflow-hidden rounded-xl border border-white/10 transition-all duration-500">
       <div className={`absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/10 to-transparent`} />
@@ -140,14 +145,14 @@ const ProximamenteCard = () => {
           Estamos trabajando en algo nuevo. ¡Mantente atento para más información!
         </p>
         <div className="mt-auto pt-4">
-          <VercelButton text="Suscríbete" onClick={() => {}} />
+          <VercelButton text="Suscríbete" onClick={handleSubscribeClick} />
         </div>
       </div>
       <div
         className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-700 w-full`}
       />
     </div>
-  )
+  );
 }
 
 export default function Projects() {

@@ -2,10 +2,10 @@ import React from 'react';
 
 const OurProcess = () => {
   return (
-    <div className="black bg-black min-h-screen">
+    <div className="black bg-black">
       <div className="relative max-w-auto lg:px-60 py-20 px-10">
         <div className="mb-20 lg:text-center">
-          <h2 className="text-3xl md:text-4xl mb-8 text-white  tracking-tight">
+          <h2 className="text-3xl md:text-4xl mb-8 text-white tracking-tight">
             Nuestro Proceso
           </h2>
           <p className="mx-auto max-w-2xl text-white text-lg">

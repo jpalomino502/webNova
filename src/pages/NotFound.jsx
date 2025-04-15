@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const NotFound = () => {
+  useEffect(() => {
+    document.title = "Página No Encontrada - WebNova";
+  }, []);
+
   return (
     <div className="min-h-screen white text-black flex items-center justify-center p-4">
   <div className="max-w-2xl w-full relative">

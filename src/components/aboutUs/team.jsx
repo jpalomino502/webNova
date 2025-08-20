@@ -13,25 +13,25 @@ import asrleyRodriguez from "../../assets/aboutUs/team/asrley_rodriguez.webp";
 
 const teamMembers = [
   {
+    name: "Joseph Palomino",
+    role: "CEO y Desarrollador Full Stack",
+    career: "Ingeniería de Sistemas",
+    university: "Universidad Autónoma de Bucaramanga (UNAB)",
+    image: josephPalomino,
+  },
+  {
     name: "David Chía",
     role: "Socio Fundador Desarrollador Web",
     career: "Ingeniería de Sistemas",
     university: "Universidad Autónoma de Bucaramanga (UNAB)",
-    image: davidChia,
+    image: 'https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png',
   },
   {
     name: "María Herrera",
     role: "Desarrolladora Frontend",
     career: "Ingeniería de Sistemas",
     university: "Universidad Autónoma de Bucaramanga (UNAB)",
-    image: mariaHerrera,
-  },
-  {
-    name: "Joseph Palomino",
-    role: "CEO y Desarrollador Full Stack",
-    career: "Ingeniería de Sistemas",
-    university: "Universidad Autónoma de Bucaramanga (UNAB)",
-    image: josephPalomino,
+    image: 'https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png',
   },
   {
     name: "Leonardo Walted",
@@ -45,7 +45,7 @@ const teamMembers = [
     role: "Contador Público",
     career: "Contaduría",
     university: "Universidad Autónoma de Bucaramanga (UNAB)",
-    image: gabrielLozada,
+    image: 'https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png',
   },
   {
     name: "Damián Morales",
@@ -101,7 +101,7 @@ export default function TeamCarousel() {
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-white text-xl ">{member.name}</h3>
-                  <p className="text-white text-sm">{member.role}</p>
+                  {/* <p className="text-white text-sm">{member.role}</p> */}
                   <p className="text-white text-xs">{member.career}</p>
                   <p className="text-white text-xs">{member.university}</p>
                 </div>
